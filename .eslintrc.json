@@ -14,6 +14,14 @@
     "plugins": [
         "react"
     ],
+    "settings": {
+        "react": {
+          "version": "detect"
+        }
+    },
+    "ignorePatterns": ["./src/reportWebVitals.ts", "./src/setupTests.ts", "./src/react-app-env.d.ts", "./src/reportWebVitals.ts"],
     "rules": {
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-uses-react": "off"
     }
 }

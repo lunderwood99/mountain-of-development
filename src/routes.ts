@@ -3,7 +3,7 @@ export const routes = {
   gettingStarted: '/getting-started',
   hardware: {
     audioInterfaces: '/audio-interfaces',
-    microphones: '/microphones',
+    microphones: '/microphones'
   },
   software: {
     DAWs: '/DAWs',

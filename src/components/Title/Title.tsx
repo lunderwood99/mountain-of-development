@@ -1,5 +1,5 @@
-import { FunctionComponent } from "react";
+import { type FunctionComponent } from 'react'
 
 export const Title: FunctionComponent = () => {
-  return(<header className='title'>Mountain<br/>of<br/>Production</header>)
+  return (<header className='title'>Mountain<br/>of<br/>Production</header>)
 }

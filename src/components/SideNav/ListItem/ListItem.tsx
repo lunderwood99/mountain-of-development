@@ -1,6 +1,6 @@
-import { FunctionComponent } from "react";
-import { ListItemButton, ListItemText } from "@mui/material";
-import { Link } from "react-router-dom";
+import { type FunctionComponent } from 'react'
+import { ListItemButton, ListItemText } from '@mui/material'
+import { Link } from 'react-router-dom'
 
 interface ListItemProps {
   item: string

@@ -1,10 +1,12 @@
-import './res/scss/styles.scss';
+import React from 'react'
+import './res/scss/styles.scss'
 import { Route, Routes } from 'react-router-dom'
-import { SideNav } from './components/SideNav/SideNav';
+import { SideNav } from './components/SideNav/SideNav'
 import { Title } from './components/Title/Title'
 import { routes } from './routes'
+import { type ReactElement } from 'react'
 
-function App() {
+function App (): ReactElement {
   return (
     <div className="app-container">
       <div className="app-container__content">
@@ -23,7 +25,7 @@ function App() {
         <Route path={routes.advancedResources} element={ <>Advanced Resources</>} />
       </Routes>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

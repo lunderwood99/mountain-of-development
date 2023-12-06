@@ -1,8 +1,7 @@
-import { FunctionComponent, useState } from "react"
-import { Collapse, List, ListItemButton, ListItemText } from "@mui/material";
-import { ExpandLess, ExpandMore } from '@mui/icons-material';
-import { Link } from "react-router-dom";
-import { ListItem } from "../ListItem/ListItem";
+import { type FunctionComponent, useState } from 'react'
+import { Collapse, List, ListItemButton, ListItemText } from '@mui/material'
+import { ExpandLess, ExpandMore } from '@mui/icons-material'
+import { ListItem } from '../ListItem/ListItem'
 
 interface NestedListProps {
   header: string
@@ -17,11 +16,11 @@ export const NestedList: FunctionComponent<NestedListProps> = ({
 }) => {
   const [open, setOpen] = useState(false)
 
-  const handleClick = () => {
+  const handleClick = (): void => {
     setOpen(!open)
   }
 
-  return(
+  return (
     <>
       <ListItemButton onClick={handleClick}>
           <ListItemText primary={header} />
