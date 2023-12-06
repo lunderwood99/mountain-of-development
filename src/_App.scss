@@ -1,6 +1,7 @@
 .app-container {
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  flex-direction: row;
   text-align: center;
   height: 100vh;
   overflow: auto;
@@ -8,13 +9,24 @@
   font-family: 'Oswald', sans-serif;
   font-size: large;
 
-  &__content {
+  &__side {
     display: flex;
     flex-direction: column;
+    justify-self: flex-start;
     margin-top: 50px;
     margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 100px;
     height: 90%;
-    width: 80%;
+    width: fit-content;
+  }
+
+  &__content {
+    display: flex;
+    width: 60em;
+    margin-top: 183px;
+    margin-right: 100px;
+    margin-left: 50px;
   }
 }
 
