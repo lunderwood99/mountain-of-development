@@ -22,6 +22,7 @@
     "ignorePatterns": ["./src/reportWebVitals.ts", "./src/setupTests.ts", "./src/react-app-env.d.ts", "./src/reportWebVitals.ts"],
     "rules": {
         "react/react-in-jsx-scope": "off",
-        "react/jsx-uses-react": "off"
+        "react/jsx-uses-react": "off",
+        "no-trailing-spaces": ["error", { "skipBlankLines": true }]
     }
 }
