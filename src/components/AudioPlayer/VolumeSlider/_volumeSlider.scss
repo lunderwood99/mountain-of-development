@@ -1,0 +1,11 @@
+.volume-slider {
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  align-items: center;
+
+  &__slider {
+    margin-left: 10px;
+    color: rgba(0, 0, 0, 0.54) !important;
+  }
+}

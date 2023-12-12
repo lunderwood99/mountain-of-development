@@ -1,0 +1,11 @@
+.audio-player {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+
+  &__progress {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}

@@ -1,5 +1,7 @@
 import { type FunctionComponent, useState, useRef } from 'react'
 import { AudioPlayerButton } from './AudioPlayerButton/AudioPlayerButton'
+import { VolumeSlider } from './VolumeSlider/VolumeSlider'
+import { ProgressBar } from './ProgressBar/ProgressBar'
 import drums from '../../res/audio/drum_track.mp3'
 
 export const AudioPlayer: FunctionComponent = () => {
@@ -20,9 +22,12 @@ export const AudioPlayer: FunctionComponent = () => {
   }
 
   return (
-  <div>
-    <AudioPlayerButton handleAudio={handleAudio}/>
-    
+  <div className='audio-player'>
+    <div className='audio-player__progress'>
+      <AudioPlayerButton handleAudio={handleAudio}/>
+      <ProgressBar audioRef={audio}/>
+    </div>
+    <VolumeSlider audioRef={audio}/>
   </div>
   )
 }

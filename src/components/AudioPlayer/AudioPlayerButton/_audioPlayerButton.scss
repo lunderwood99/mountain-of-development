@@ -1,6 +1,7 @@
 .audio-player-button {
+  width: fit-content;
+
   &__icon {
-    color: $dark-green;
     font-size: 2rem !important;
   }
 }
