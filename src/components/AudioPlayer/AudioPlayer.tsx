@@ -1,4 +1,5 @@
 import { type FunctionComponent, useState, useRef } from 'react'
+import { List, ListItemButton, ListItemText } from '@mui/material'
 import { AudioPlayerButton } from './AudioPlayerButton/AudioPlayerButton'
 import { VolumeSlider } from './VolumeSlider/VolumeSlider'
 import { ProgressBar } from './ProgressBar/ProgressBar'
@@ -23,6 +24,14 @@ export const AudioPlayer: FunctionComponent = () => {
 
   return (
   <div className='audio-player'>
+    <List className='audio-player__list'>
+      <ListItemButton className='audio-player__list--item'>
+        <ListItemText className='audio-player__list--item--text' primary='Saturated' />
+      </ListItemButton>
+      <ListItemButton className='audio-player__list--item'>
+        <ListItemText className='audio-player__list--item--text' primary='Unsaturated' />
+      </ListItemButton>
+    </List>
     <div className='audio-player__progress'>
       <AudioPlayerButton handleAudio={handleAudio}/>
       <ProgressBar audioRef={audio}/>

@@ -7,6 +7,27 @@
   border-radius: 20px;
   border: 2px solid $dark-green;
 
+  &__list {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0 !important;
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+    height: 20px;
+
+    &--item {
+      border-radius: 20px !important;
+      background-color: $light-tan !important;
+      width: 50px;
+
+      &--text {
+        width: 20px;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
   &__progress {
     display: flex;
     flex-direction: row;
