@@ -23,8 +23,8 @@ export const VolumeIcon: FunctionComponent<VolumeIconProps> = ({ volume, setVolu
 
   return (
     <>
-      <IconButton onClick={handleClick}>
-        {volume === 0 ? <VolumeMuteOutlined className='volume-icon__icon' /> : <VolumeUpOutlined className='volume-icon__icon' />}
+      <IconButton onClick={handleClick} className='volume-icon'>
+        {volume === 0 ? <VolumeMuteOutlined /> : <VolumeUpOutlined />}
       </IconButton>
     </>
   )

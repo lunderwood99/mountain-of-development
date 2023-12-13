@@ -16,10 +16,10 @@ export const AudioPlayerButton: FunctionComponent<AudioPlayerButtonProps> = ({ h
   }
 
   return (
-    <div className="audio-player-button">
-      <IconButton onClick={onClick}>
+    <>
+      <IconButton onClick={onClick} className="audio-player-button">
         {!clicked ? <PlayCircleOutlineIcon className="audio-player-button__icon"/> : <PauseCircleOutlineIcon className="audio-player-button__icon"/>}
       </IconButton>
-    </div>
+    </>
   )
 }

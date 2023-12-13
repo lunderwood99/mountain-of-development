@@ -3,9 +3,10 @@
   flex-direction: row;
   width: 150px;
   align-items: center;
+  margin-left: 5px;
 
   &__slider {
     margin-left: 10px;
-    color: rgba(0, 0, 0, 0.54) !important;
+    color: black !important;
   }
 }

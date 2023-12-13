@@ -8,7 +8,6 @@ export const GettingStarted: FunctionComponent = () => {
         Getting Started
       </header>
       <body className='getting-started__body'>
-        This is the body
         <AudioPlayer />
       </body>
     </div>
