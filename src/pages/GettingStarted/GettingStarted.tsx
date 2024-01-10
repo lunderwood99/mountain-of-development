@@ -1,5 +1,5 @@
 import { type FunctionComponent } from 'react'
-import { AudioPlayer } from '../../components/AudioPlayer/AudioPlayer'
+// import { AudioPlayer } from '../../components/AudioPlayer/AudioPlayer'
 
 export const GettingStarted: FunctionComponent = () => {
   return (
@@ -7,9 +7,9 @@ export const GettingStarted: FunctionComponent = () => {
       <header className='getting-started__title'>
         Getting Started
       </header>
-      <body className='getting-started__body'>
+      {/* <body className='getting-started__body'>
         <AudioPlayer />
-      </body>
+      </body> */}
     </div>
   )
 }
