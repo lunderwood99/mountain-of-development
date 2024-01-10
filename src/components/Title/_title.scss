@@ -5,9 +5,10 @@
   font-size: 35px;
   line-height: 35px;
   margin: 5px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   padding-top: 10px;
-  border-bottom: 5px solid $dark-green;
-  border-top: 5px solid $dark-green;
-  border-radius: 10px;
+  border-bottom: 5px solid $orange;
+  border-top: 5px solid $red;
+  border-image: linear-gradient(to right, $red 25%, $orange 25%, $orange 50%, $yellow 50%, $yellow 75%, $light-tan 75%) 4;
+  //border-radius: 10px;
 }

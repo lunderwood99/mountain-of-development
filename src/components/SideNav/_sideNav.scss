@@ -1,8 +1,8 @@
 .side-nav {
-  margin-top: 20px;
-  border: 5px solid $dark-green;
+  margin-top: 50px;
+  border-right: 5px solid;
   width: 250px;
   height: fit-content;
-  border-radius: 25px;
+  border-image: linear-gradient(to bottom, $light-tan 25%, $yellow 25%, $yellow 50%, $orange 50%, $orange 75%, $red 75%) 4;
   font-weight: bold;
 }
